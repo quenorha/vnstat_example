@@ -24,7 +24,7 @@ It will provide a simple web interface to display the network data usage over th
 
 You can additionnaly use it in command line, in order to trigger an action when a threshold is reached (see script monitor_usage)
 
-```
+```shell
 #!/bin/bash
 
 vnstat='docker exec -ti vnstat vnstat'
@@ -39,7 +39,7 @@ Download and place the script monitor_container_led i.e. folder /etc/config-tool
 
 Give it execution permission :
 
-```
+```shell
 chmod 750 /etc/config-tools/monitor_usage
 ```
 
@@ -47,11 +47,11 @@ chmod 750 /etc/config-tools/monitor_usage
 Then you need to use CRON in order to trigger a period call of the script.
 
 To open crontab with nano (easier than vim ?)
-```
+```shell
 export VISUAL=nano; crontab -e
-``
-Copy/Paste the following (adapt to your script location) :
 ```
+Copy/Paste the following (adapt to your script location) :
+```shell
 * * * * *  /etc/config-tools/monitor_usage
 ```
 This will check the data usage every minute.
