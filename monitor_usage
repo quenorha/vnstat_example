@@ -1,0 +1,9 @@
+#!/bin/bash
+
+vnstat='docker exec -ti vnstat vnstat'
+
+if ! $vnstat -i wwan0 --alert 0 3 monthly total 50 MiB; then
+    # The wwab0 interface exceeded the 50 MiB transmitted limit
+    # You can send an alert or trigger any other action
+   echo "threshold reached"
+fi
