@@ -20,6 +20,9 @@ vergoh/vnstat
 
 It will provide a simple web interface to display the network data usage over the different interface.
 
+![image](https://github.com/user-attachments/assets/809bf6d4-257f-48c3-ba66-39272c1f8604)
+
+
 ## Script usage
 
 You can additionnaly use it in command line, in order to trigger an action when a threshold is reached (see script monitor_usage)
